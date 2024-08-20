@@ -26,4 +26,8 @@ class Province extends Model
     public function teacher(){
         return $this->hasMany(teacher::class,'province_id','id');
     }
+
+    public function student(){
+        return $this->hasMany(student::class,'province_id','id');
+    }
 }
