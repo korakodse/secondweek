@@ -87,3 +87,11 @@ return view('korakod');
             })
     -> get();
     dd($p);*/
+
+    /*echo "# third_week" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/korakodse/third_week.git
+git push -u origin main*/
