@@ -34,6 +34,8 @@ Route::get('/profile', function () {
 
 return view('korakod');
 
+
+
 });
     // คำสั่ง debug
     // การ query
@@ -49,7 +51,7 @@ return view('korakod');
     //-> wherenotin('id',['10','20','30']) ข้อมูลยกเว้นที่ไม่แสดง
     //-> take(10) ดึงข้อมูลจำนวน 10 ชุด
     //-> orderby('id','desc') เรียงลำดับจากมากไปน้อย asc น้อยไปมาก
-    //-> get(); ดึงข้อมมูลในรูปแบบ array 
+    //-> get(); ดึงข้อมมูลในรูปแบบ array
     //-> first(); ดึงข้อมูลตัวแรกตัวเดียว ไม่อยู่ในแบบ array
     //-> count(); นับจำนวนข้อมูลที่ดึงออกมา
     //where เงื่อนไขคล้าย sql get ดึงข้อมูลออกมาในรูปแบบของ array
@@ -81,8 +83,8 @@ return view('korakod');
 
     /*การค้นหาใน relation 1:m wherehas
     $p = Province::query()
-    -> with('teacher') 
-    -> wherehas('teacher',function($query){ $query 
+    -> with('teacher')
+    -> wherehas('teacher',function($query){ $query
         -> where('id','100');
             })
     -> get();

@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
             RegionSeeder::class,
             ProvinceSeeder::class,
             TitleSeeder::class,
-            
+
         ]);
+        \App\Models\User::factory(10)->create();
         \App\Models\Student::factory(100)->create();
         \App\Models\Teacher::factory(100)->create();
     }
